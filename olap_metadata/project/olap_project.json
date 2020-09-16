@@ -1,0 +1,19 @@
+{
+  "uuid" : "1990438b-a107-b737-8ed2-f46c19c5988e",
+  "last_modified" : 1600157770404,
+  "version" : "4.0.0.0",
+  "name" : "olap_project",
+  "tables" : [ "OLAP_2020.OLAP_2020_EVENT_TEST", "OLAP_2020.OLAP_2020_PROFILE_TEST" ],
+  "owner" : "ADMIN",
+  "status" : "ENABLED",
+  "create_time_utc" : 1599650925035,
+  "last_update_time" : null,
+  "description" : "",
+  "realizations" : [ {
+    "type" : "CUBE",
+    "realization" : "olap_cube_full"
+  } ],
+  "models" : [ "olap_model_full" ],
+  "ext_filters" : [ ],
+  "override_kylin_properties" : { }
+}

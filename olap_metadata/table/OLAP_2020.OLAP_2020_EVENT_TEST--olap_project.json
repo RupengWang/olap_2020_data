@@ -1,0 +1,178 @@
+{
+  "uuid" : "08ae4be4-792e-73c3-cba3-5e4841a4c347",
+  "last_modified" : 1600089589100,
+  "version" : "4.0.0.0",
+  "name" : "OLAP_2020_EVENT_TEST",
+  "columns" : [ {
+    "id" : "1",
+    "name" : "DISTINCT_ID",
+    "datatype" : "bigint"
+  }, {
+    "id" : "2",
+    "name" : "XWHEN",
+    "datatype" : "bigint"
+  }, {
+    "id" : "3",
+    "name" : "XWHAT",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "4",
+    "name" : "XWHAT_ID",
+    "datatype" : "integer"
+  }, {
+    "id" : "5",
+    "name" : "URL",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "6",
+    "name" : "TITLE",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "7",
+    "name" : "TRAFFIC_SOURCE_TYPE",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "8",
+    "name" : "OS",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "9",
+    "name" : "OS_VERSION",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "10",
+    "name" : "COUNTRY",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "11",
+    "name" : "PROVINCE",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "12",
+    "name" : "CITY",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "13",
+    "name" : "APP_VERSION",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "14",
+    "name" : "FIRSTCOMMODITY",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "15",
+    "name" : "SECONDCOMMODITY",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "16",
+    "name" : "COMMODITYNAME",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "17",
+    "name" : "PRICE",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "18",
+    "name" : "LOGINMETHOD",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "19",
+    "name" : "SIGNUPMETHOD",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "20",
+    "name" : "BANNERNAME",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "21",
+    "name" : "BANNERPOSITION",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "22",
+    "name" : "DELIVERYMETHOD",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "23",
+    "name" : "IFUSEDISCOUNT",
+    "datatype" : "integer"
+  }, {
+    "id" : "24",
+    "name" : "IFUSELNTEGRAL",
+    "datatype" : "integer"
+  }, {
+    "id" : "25",
+    "name" : "NUMBEROFLNTEGRAL",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "26",
+    "name" : "ORDERAMOUNT",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "27",
+    "name" : "DISCOUNTAMOUNT",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "28",
+    "name" : "COMMODITYNUMBER",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "29",
+    "name" : "HASRESULT",
+    "datatype" : "integer"
+  }, {
+    "id" : "30",
+    "name" : "ISRECOMMEND",
+    "datatype" : "integer"
+  }, {
+    "id" : "31",
+    "name" : "KEYWORD",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "32",
+    "name" : "RECEIVERNAME",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "33",
+    "name" : "TRANSPORTATIONCOSTS",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "34",
+    "name" : "SHAREMETHOD",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "35",
+    "name" : "STORENAME",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "36",
+    "name" : "DISCOUNTNAME",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "37",
+    "name" : "DURATION",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "38",
+    "name" : "COMMODITYSCORE",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "39",
+    "name" : "INVITATIONMETHOD",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "40",
+    "name" : "QUESTIONTYPE",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "41",
+    "name" : "DS",
+    "datatype" : "integer"
+  }, {
+    "id" : "42",
+    "name" : "DISTINCT_ID2",
+    "datatype" : "bigint"
+  } ],
+  "source_type" : 0,
+  "table_type" : "MANAGED_TABLE",
+  "database" : "OLAP_2020"
+}

@@ -1,0 +1,40 @@
+{
+  "uuid" : "153959c8-367b-2617-22e1-91a7a8c4ac32",
+  "last_modified" : 1600092490420,
+  "version" : "4.0.0.0",
+  "name" : "olap_model_full",
+  "owner" : "ADMIN",
+  "is_draft" : false,
+  "description" : "",
+  "fact_table" : "OLAP_2020.OLAP_2020_EVENT_TEST",
+  "lookups" : [ {
+    "table" : "OLAP_2020.OLAP_2020_PROFILE_TEST",
+    "kind" : "LOOKUP",
+    "alias" : "OLAP_2020_PROFILE_TEST",
+    "join" : {
+      "type" : "inner",
+      "primary_key" : [ "OLAP_2020_PROFILE_TEST.DISTINCT_ID" ],
+      "foreign_key" : [ "OLAP_2020_EVENT_TEST.DISTINCT_ID" ]
+    }
+  } ],
+  "dimensions" : [ {
+    "table" : "OLAP_2020_EVENT_TEST",
+    "columns" : [ "DISTINCT_ID", "OS", "OS_VERSION", "XWHAT", "DS" ]
+  }, {
+    "table" : "OLAP_2020_PROFILE_TEST",
+    "columns" : [ "LIB", "DISTINCT_ID" ]
+  } ],
+  "metrics" : [ "OLAP_2020_EVENT_TEST.PRICE", "OLAP_2020_EVENT_TEST.DISTINCT_ID2" ],
+  "filter_condition" : "",
+  "partition_desc" : {
+    "partition_date_column" : "OLAP_2020_EVENT_TEST.DS",
+    "partition_time_column" : null,
+    "partition_date_start" : 0,
+    "partition_date_format" : "yyyyMMdd",
+    "partition_time_format" : "HH:mm:ss",
+    "partition_type" : "APPEND",
+    "partition_condition_builder" : "org.apache.kylin.metadata.model.PartitionDesc$DefaultPartitionConditionBuilder"
+  },
+  "capacity" : "MEDIUM",
+  "projectName" : "olap_project"
+}

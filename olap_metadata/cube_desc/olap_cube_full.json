@@ -1,0 +1,154 @@
+{
+  "uuid" : "272083bc-474c-06b4-fa57-2a3f68ee11a2",
+  "last_modified" : 1600092561700,
+  "version" : "4.0.0.0",
+  "name" : "olap_cube_full",
+  "is_draft" : false,
+  "model_name" : "olap_model_full",
+  "description" : "",
+  "null_string" : null,
+  "dimensions" : [ {
+    "name" : "DISTINCT_ID",
+    "table" : "OLAP_2020_EVENT_TEST",
+    "column" : "DISTINCT_ID",
+    "derived" : null
+  }, {
+    "name" : "XWHAT",
+    "table" : "OLAP_2020_EVENT_TEST",
+    "column" : "XWHAT",
+    "derived" : null
+  }, {
+    "name" : "OS",
+    "table" : "OLAP_2020_EVENT_TEST",
+    "column" : "OS",
+    "derived" : null
+  }, {
+    "name" : "OS_VERSION",
+    "table" : "OLAP_2020_EVENT_TEST",
+    "column" : "OS_VERSION",
+    "derived" : null
+  }, {
+    "name" : "DS",
+    "table" : "OLAP_2020_EVENT_TEST",
+    "column" : "DS",
+    "derived" : null
+  }, {
+    "name" : "DISTINCT_ID",
+    "table" : "OLAP_2020_PROFILE_TEST",
+    "column" : null,
+    "derived" : [ "DISTINCT_ID" ]
+  }, {
+    "name" : "LIB",
+    "table" : "OLAP_2020_PROFILE_TEST",
+    "column" : null,
+    "derived" : [ "LIB" ]
+  } ],
+  "measures" : [ {
+    "name" : "_COUNT_",
+    "function" : {
+      "expression" : "COUNT",
+      "parameter" : {
+        "type" : "constant",
+        "value" : "1"
+      },
+      "returntype" : "bigint"
+    }
+  }, {
+    "name" : "DISTINCT",
+    "function" : {
+      "expression" : "COUNT_DISTINCT",
+      "parameter" : {
+        "type" : "column",
+        "value" : "OLAP_2020_EVENT_TEST.DISTINCT_ID2"
+      },
+      "returntype" : "bitmap"
+    }
+  }, {
+    "name" : "SUM",
+    "function" : {
+      "expression" : "SUM",
+      "parameter" : {
+        "type" : "column",
+        "value" : "OLAP_2020_EVENT_TEST.PRICE"
+      },
+      "returntype" : "decimal(18,3)"
+    }
+  }, {
+    "name" : "COUNT2",
+    "function" : {
+      "expression" : "COUNT",
+      "parameter" : {
+        "type" : "column",
+        "value" : "OLAP_2020_EVENT_TEST.DISTINCT_ID2"
+      },
+      "returntype" : "bigint"
+    }
+  } ],
+  "dictionaries" : [ {
+    "column" : "OLAP_2020_EVENT_TEST.DISTINCT_ID2",
+    "builder" : "org.apache.kylin.dict.GlobalDictionaryBuilder",
+    "cube" : null,
+    "model" : null
+  } ],
+  "rowkey" : {
+    "rowkey_columns" : [ {
+      "column" : "OLAP_2020_EVENT_TEST.DISTINCT_ID",
+      "encoding" : "dict",
+      "isShardBy" : false
+    }, {
+      "column" : "OLAP_2020_EVENT_TEST.XWHAT",
+      "encoding" : "dict",
+      "isShardBy" : false
+    }, {
+      "column" : "OLAP_2020_EVENT_TEST.OS",
+      "encoding" : "dict",
+      "isShardBy" : false
+    }, {
+      "column" : "OLAP_2020_EVENT_TEST.OS_VERSION",
+      "encoding" : "dict",
+      "isShardBy" : false
+    }, {
+      "column" : "OLAP_2020_EVENT_TEST.DS",
+      "encoding" : "dict",
+      "isShardBy" : false
+    } ]
+  },
+  "hbase_mapping" : {
+    "column_family" : [ {
+      "name" : "F1",
+      "columns" : [ {
+        "qualifier" : "M",
+        "measure_refs" : [ "_COUNT_", "SUM", "COUNT2" ]
+      } ]
+    }, {
+      "name" : "F2",
+      "columns" : [ {
+        "qualifier" : "M",
+        "measure_refs" : [ "DISTINCT" ]
+      } ]
+    } ]
+  },
+  "aggregation_groups" : [ {
+    "includes" : [ "OLAP_2020_EVENT_TEST.DISTINCT_ID", "OLAP_2020_EVENT_TEST.XWHAT", "OLAP_2020_EVENT_TEST.OS", "OLAP_2020_EVENT_TEST.OS_VERSION", "OLAP_2020_EVENT_TEST.DS" ],
+    "select_rule" : {
+      "hierarchy_dims" : [ ],
+      "mandatory_dims" : [ ],
+      "joint_dims" : [ ]
+    }
+  } ],
+  "signature" : "Tyx0sTeTGUs+GnN4gtr/ZQ==",
+  "notify_list" : [ ],
+  "status_need_notify" : [ "ERROR", "DISCARDED", "SUCCEED" ],
+  "partition_date_start" : 1593561600000,
+  "partition_date_end" : 3153600000000,
+  "auto_merge_time_ranges" : [ ],
+  "volatile_range" : 0,
+  "retention_range" : 0,
+  "engine_type" : 6,
+  "storage_type" : 4,
+  "override_kylin_properties" : { },
+  "cuboid_black_list" : [ ],
+  "parent_forward" : 3,
+  "mandatory_dimension_set_list" : [ ],
+  "snapshot_table_desc_list" : [ ]
+}

@@ -1,0 +1,146 @@
+{
+  "uuid" : "91f033c5-761a-d981-4552-bd20037992ae",
+  "last_modified" : 1600088330281,
+  "version" : "4.0.0.0",
+  "name" : "OLAP_2020_PROFILE_TEST",
+  "columns" : [ {
+    "id" : "1",
+    "name" : "DISTINCT_ID",
+    "datatype" : "bigint"
+  }, {
+    "id" : "2",
+    "name" : "AGE",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "3",
+    "name" : "GENDER",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "4",
+    "name" : "EMAIL",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "5",
+    "name" : "LIB",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "6",
+    "name" : "LIB_VERSION",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "7",
+    "name" : "TOTAL_VISIT_DAYS",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "8",
+    "name" : "VIP_LEVEL",
+    "datatype" : "varchar(256)"
+  }, {
+    "id" : "9",
+    "name" : "TOTAL_AMOUNT",
+    "datatype" : "decimal(18,3)"
+  }, {
+    "id" : "10",
+    "name" : "FQ1",
+    "datatype" : "integer"
+  }, {
+    "id" : "11",
+    "name" : "FQ2",
+    "datatype" : "integer"
+  }, {
+    "id" : "12",
+    "name" : "FQ3",
+    "datatype" : "integer"
+  }, {
+    "id" : "13",
+    "name" : "FQ4",
+    "datatype" : "integer"
+  }, {
+    "id" : "14",
+    "name" : "FQ5",
+    "datatype" : "integer"
+  }, {
+    "id" : "15",
+    "name" : "FQ6",
+    "datatype" : "integer"
+  }, {
+    "id" : "16",
+    "name" : "FQ7",
+    "datatype" : "integer"
+  }, {
+    "id" : "17",
+    "name" : "FQ8",
+    "datatype" : "integer"
+  }, {
+    "id" : "18",
+    "name" : "FQ9",
+    "datatype" : "integer"
+  }, {
+    "id" : "19",
+    "name" : "FQ10",
+    "datatype" : "integer"
+  }, {
+    "id" : "20",
+    "name" : "FQ11",
+    "datatype" : "integer"
+  }, {
+    "id" : "21",
+    "name" : "FQ12",
+    "datatype" : "integer"
+  }, {
+    "id" : "22",
+    "name" : "FQ13",
+    "datatype" : "integer"
+  }, {
+    "id" : "23",
+    "name" : "FQ14",
+    "datatype" : "integer"
+  }, {
+    "id" : "24",
+    "name" : "FQ15",
+    "datatype" : "integer"
+  }, {
+    "id" : "25",
+    "name" : "FQ16",
+    "datatype" : "integer"
+  }, {
+    "id" : "26",
+    "name" : "FQ17",
+    "datatype" : "integer"
+  }, {
+    "id" : "27",
+    "name" : "FQ18",
+    "datatype" : "integer"
+  }, {
+    "id" : "28",
+    "name" : "FQ19",
+    "datatype" : "integer"
+  }, {
+    "id" : "29",
+    "name" : "FQ20",
+    "datatype" : "integer"
+  }, {
+    "id" : "30",
+    "name" : "FQ21",
+    "datatype" : "integer"
+  }, {
+    "id" : "31",
+    "name" : "FQ22",
+    "datatype" : "integer"
+  }, {
+    "id" : "32",
+    "name" : "FQ23",
+    "datatype" : "integer"
+  }, {
+    "id" : "33",
+    "name" : "FQ24",
+    "datatype" : "integer"
+  }, {
+    "id" : "34",
+    "name" : "FQ25",
+    "datatype" : "integer"
+  } ],
+  "source_type" : 0,
+  "table_type" : "MANAGED_TABLE",
+  "database" : "OLAP_2020"
+}

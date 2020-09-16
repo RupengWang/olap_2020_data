@@ -1,0 +1,17 @@
+{
+  "uuid" : "b946aed5-64b2-c490-1561-28ebe5b9f3b0",
+  "last_modified" : 1600093173059,
+  "version" : "4.0.0.0",
+  "name" : "olap_cube_full",
+  "owner" : "ADMIN",
+  "descriptor" : "olap_cube_full",
+  "display_name" : "olap_cube_full",
+  "cost" : 50,
+  "status" : "READY",
+  "segments" : [],
+  "create_time_utc" : 1600092561770,
+  "cuboid_bytes" : null,
+  "cuboid_bytes_recommend" : null,
+  "cuboid_last_optimized" : 0,
+  "snapshots" : { }
+}
